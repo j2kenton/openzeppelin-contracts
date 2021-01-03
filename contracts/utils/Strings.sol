@@ -13,7 +13,7 @@ library Strings {
         // Inspired by OraclizeAPI's implementation - MIT licence
         // https://github.com/oraclize/ethereum-api/blob/b42146b063c7d6ee1358846c198246239e9360e8/oraclizeAPI_0.4.25.sol
 
-        if (value == 0) {
+        if (value == 0 || (value < 1 && value > -1)) {
             return "0";
         }
         uint256 temp = value;
